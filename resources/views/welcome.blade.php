@@ -81,6 +81,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <h3>/resources/views/welcome.blade.php</h3>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
