@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('users', ['uses' => 'UsersController@index']);
+Route::get('users', ['uses' => 'UsersController@index'])->middleware('auth');
 Route::get('users/create', ['uses' => 'UsersController@create']);
 Route::post('users', ['uses' => 'UsersController@store']);
 Auth::routes();
