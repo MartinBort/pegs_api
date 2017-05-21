@@ -25,4 +25,12 @@ Route::get('users/create', ['uses' => 'UsersController@create']);
 Route::post('users', ['uses' => 'UsersController@store']);
 Auth::routes();
 
+Route::get('/profile/{username}', 'ProfileController@profile');
+
+Route::resource('events', 'EventsController');
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::resource('events', 'EventsController');
+});
+
 

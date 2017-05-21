@@ -60,6 +60,16 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile/{{ Auth::user()->username }}">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="/events/create/">Create a Peg</a>
+                                    </li>
+                                    <hr>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
